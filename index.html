@@ -73,10 +73,10 @@ setInterval(doDate, 1000);
         var url = document.getElementById("path").value;
 		var ret = url.replace('https://www.youtube.com/watch?v=','');
         var url1 = "https://yewtu.be/latest_version?id=" +ret+"&itag=22&local=true";
+				document.getElementById('path').value='';
         document.getElementById('show').innerHTML='<video  id="movie" src="'+url1+'" height="300" width="300" controls autoplay > </video>';
         var player =document.getElementById('movie').volume = 0.5;;
         player.load();
-		document.getElementById('path').value='';
 
         }
     </script> 	
